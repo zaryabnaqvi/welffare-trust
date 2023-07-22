@@ -16,6 +16,9 @@ import React from 'react';
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import Hussain from './Component/Hussain'
+import Ashura from './Component/Ashura'
+import Arabaeen from './Component/Arabaeen'
+import HussainFAQs from './Component/HussainFAQs'
 
 
 
@@ -39,6 +42,10 @@ function App() {
        <Route exact path="/join" element={<Join/>}/>
        <Route exact path="/Donate" element={<Donate/>}/>
        <Route exact path="/hussain" element={<Hussain/>}/>
+       <Route exact path="/hussain/ashura-day" element={<Ashura/>}/>
+       <Route exact path="/hussain/arabaeen" element={<Arabaeen/>}/>
+       <Route exact path="/hussain/hussain-faqs" element={<HussainFAQs/>}/>
+
 
 
 

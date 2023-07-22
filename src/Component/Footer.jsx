@@ -129,49 +129,49 @@ export default function Footer(props) {
   return (
     <>
           <div style={{bottom:"0"}} data-aos="fade-up"
-            data-aos-duration="1500" class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 footer-links">
+            data-aos-duration="1500" className="footer">
+      <div className="footer-top">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 footer-links">
               <h4>About Us</h4>
               <ul>
                 <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#">Home</a>
+                  <i className="ion-ios-arrow-forward"></i> <a href="#">Home</a>
                 </li>
                 <li>
-                  <i class="ion-ios-arrow-forward"></i>
+                  <i className="ion-ios-arrow-forward"></i>
                   <a href="#about">About us</a>
                 </li>
                 <li>
-                  <i class="ion-ios-arrow-forward"></i>
+                  <i className="ion-ios-arrow-forward"></i>
                   <a href="#service">DONATE</a>
                 </li>
-                {/* <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li> -->
-                <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li> --> */}
+                {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li> -->
+                <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li> --> */}
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-links">
+            <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                {/* <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li> --> */}
+                {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li> --> */}
                 <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#team">Team</a>
+                  <i className="ion-ios-arrow-forward"></i> <a href="#team">Team</a>
                 </li>
-                {/* <!-- <li><i class="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> --> */}
+                {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> --> */}
                 <li>
-                  <i class="ion-ios-arrow-forward"></i>
+                  <i className="ion-ios-arrow-forward"></i>
                   <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <i class="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a>
+                  <i className="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a>
                 </li>
               </ul>
             </div>
 
             {/* <div
-              class="col-lg-3 col-md-6 footer-contact"
+              className="col-lg-3 col-md-6 footer-contact"
               style={{fontSize: '1.5rem'}}
             >
               <h4>Contact Us</h4>
@@ -186,15 +186,15 @@ export default function Footer(props) {
         
             </div> */}
 
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div className="col-lg-4 col-md-6 footer-newsletter">
                <h4>SOCIAL LINKS</h4>
               <p>
-                <a href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} class="fa-brands fa-facebook h1"></i></a>
-                <a href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} class="fa-brands fa-instagram h1"></i></a>
-                <a href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} class="fa-brands fa-youtube h1"></i></a>
-                <a onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} class="fa-brands fa-whatsapp h1"></i></a>
+                <a href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-facebook h1"></i></a>
+                <a href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-instagram h1"></i></a>
+                <a href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-youtube h1"></i></a>
+                <a onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-whatsapp h1"></i></a>
                 {/* <a  data-modal-target="popup-modal"
-        data-modal-toggle="popup-modal"  onClick={toggleModal} ><i style={{marginLeft:'.5rem'}} class="fa-brands fa-whatsapp h1"></i></a> */}
+        data-modal-toggle="popup-modal"  onClick={toggleModal} ><i style={{marginLeft:'.5rem'}} className="fa-brands fa-whatsapp h1"></i></a> */}
               </p> 
 
 
@@ -234,10 +234,10 @@ export default function Footer(props) {
         </div>
       </div>
 
-      <div class="container">
-        <div class="row align-items-center">
+      <div className="container">
+        <div className="row align-items-center">
           <div
-            class="col-md-6 copyright"
+            className="col-md-6 copyright"
             style={{color: '#fff', fontSize: '1.3rem'}}
           >
             Copyright &copy; 2023 Aza - e - Hussain. All Rights Reserved.
@@ -248,7 +248,7 @@ export default function Footer(props) {
       </div>
     </div>
 
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+    <a href="#" className="back-to-top"><i className="ion-ios-arrow-up"></i></a>
     
     </>
   )

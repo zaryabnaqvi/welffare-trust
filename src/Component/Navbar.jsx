@@ -4,10 +4,57 @@ import {Link} from "react-router-dom"
 import Logo from '../assets/images/logo2.png'
 // import { Dropdown } from 'react-bootstrap';
 
-import Button from 'react-bootstrap/Button';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
+// import Button from 'react-bootstrap/Button';
+// import ButtonGroup from 'react-bootstrap/ButtonGroup';
+// import Dropdown from 'react-bootstrap/Dropdown';
 export default function Navbar() {
+
+
+
+  const [check, setCheck] = useState(false);
+
+  const [check1, setCheck1] = useState(false);
+
+  const [check2, setCheck2] = useState(false);
+
+  const [check3, setCheck3] = useState(false);
+
+  // Function to toggle the dropdown on small screens
+
+
+  const handleDropdownToggle = () => {
+   if(check===false){
+    setCheck(true)
+   }else{
+    setCheck(false)
+   }
+  };
+
+  const handleDropdownToggle1 = () => {
+
+    if(check1===false){
+     setCheck1(true)
+    }else{
+     setCheck1(false)
+    }
+   };
+
+  // Function to close the dropdown on resize for big screens
+
+
+  // Attach event listeners on component mount and remove them on unmount
+   
+
+
+
+
+
+
+
+
+
+
+
 
 
   let [block,setblock]=useState("");
@@ -42,6 +89,9 @@ export default function Navbar() {
            
           }
         };
+
+        
+       
     
         window.addEventListener('scroll', handleScroll);
     
@@ -77,9 +127,24 @@ export default function Navbar() {
           
       }
     
-      useEffect(() => {
+      
+        useEffect(() => {
+      
+                if(window.innerWidth >= 600){
+                  setCheck2(true)
+                }else{
+                  setCheck2(false)
+                }
 
-      }, );
+                if(window.innerWidth >= 600){
+                  setCheck3(true)
+                }else{
+                  setCheck3(false)
+                }
+  
+      
+        } );
+  
     
     
     
@@ -105,16 +170,30 @@ export default function Navbar() {
 
           {/* MEDIA DROP DOWN */}
 
-        <Dropdown  >
+        {/* <Dropdown  >
         <Button className='togglebutton'><Link  onClick={togglenav} to='/media'>MEDIA</Link></Button>
         <Dropdown.Toggle variant='light'  className='togglearrow' id="" active/>
         <Dropdown.Menu className='aza'>
-          <Dropdown.Item eventKey="1" className='dd-links' ><Link  onClick={togglenav} to='/media/maglis'>MAJLIS</Link></Dropdown.Item>
-          <Dropdown.Item eventKey="2" className='dd-links' ><Link  onClick={togglenav} to='/media/milad'>MILAD</Link></Dropdown.Item>
+          <Dropdown.Item eventKey="1" className='dd-links' ><Link  onClick={togglenav} to='/media/maglis'>MAJLIS</Link>           </Dropdown.Item>
+          <Dropdown.Item eventKey="2" className='dd-links' ><Link  onClick={togglenav} to='/media/milad'>MILAD</Link>             </Dropdown.Item>
           <Dropdown.Item eventKey="3" className='dd-links' ><Link  onClick={togglenav} to='/media/anouncement'>ANOUNCEMENTS</Link></Dropdown.Item>
       
         </Dropdown.Menu>
-      </Dropdown>
+      </Dropdown> */}
+        <div key={7} className={`${ check ?"dropDown dropDown-hover":'dropDown'}`}  >
+      <button key={56} className="dropBtn" ><Link to='/media' onClick={togglenav}>MEDIA</Link> 
+      <i key={9} className="fa fa-caret-down" onClick={handleDropdownToggle} style={{display:`${check2 ? 'none':''}`,marginLeft:'15px',transform:`${check ? 'rotateX(180deg)':''}`}}></i>
+      </button>
+     
+      <div className={`dropdownContent`} >
+      <Link key={51} onClick={togglenav} to='/media/maglis'>MAJLIS</Link>           
+      <Link key={52} onClick={togglenav} to='/media/milad'>MILAD</Link>             
+      <Link key={53} onClick={togglenav} to='/media/anouncement'>ANOUNCEMENTS</Link>
+      </div>
+    </div>
+
+  
+  
 
 
 
@@ -124,20 +203,32 @@ export default function Navbar() {
 
 {/* MEDIA DROP DOWN */}
 
-<Dropdown  >
-<Button className='togglebutton'><Link to='/hussain'>HUSSAIN</Link></Button>
+{/* <Dropdown  >
+<Button className='togglebutton'><Link  onClick={togglenav} to='/hussain'>HUSSAIN</Link></Button>
 <Dropdown.Toggle variant='light'  className='togglearrow' id="" active/>
 <Dropdown.Menu className='aza'>
 <Dropdown.Item eventKey="1" className='dd-links' ><Link  onClick={togglenav} to='/hussain/ashura-day'>The day of Ashura</Link></Dropdown.Item>
-<Dropdown.Item eventKey="2" className='dd-links' ><Link  onClick={togglenav} to='/hussain/Arabaeen'>Arabaeen</Link></Dropdown.Item>
-<Dropdown.Item eventKey="3" className='dd-links' ><Link  onClick={togglenav} to='/hussain/FAQS'>FAQs</Link></Dropdown.Item>
+<Dropdown.Item eventKey="2" className='dd-links' ><Link  onClick={togglenav} to='/hussain/Arabaeen'>Arabaeen           </Link></Dropdown.Item>
+<Dropdown.Item eventKey="3" className='dd-links' ><Link  onClick={togglenav} to='/hussain/FAQS'>FAQs                   </Link></Dropdown.Item>
 
 </Dropdown.Menu>
-</Dropdown>
+</Dropdown> */}
+
+<div key={1} className={`${ check1 ?"dropDown dropDown-hover":'dropDown'}`}  >
+      <button key={2} className="dropBtn" ><Link to='/hussain' onClick={togglenav}>HUSSAIN</Link> 
+      <i key={34} className="fa fa-caret-down" onClick={handleDropdownToggle1} style={{display:`${check3 ? 'none':''}`,marginLeft:'15px',transform:`${check1 ? 'rotateX(180deg)':''}`}}></i>
+      </button>
+     
+      <div className={`dropdownContent`}>
+      <Link key='1'  onClick={togglenav} to='/hussain/ashura-day'>The day of Ashura</Link>
+      <Link key='2'  onClick={togglenav} to='/hussain/Arabaeen'>Arabaeen</Link>
+      <Link key='3'  onClick={togglenav} to='/hussain/hussain-faqs'>FAQs</Link>
+      </div>
+    </div>     
 
 
-
-
+ 
+ 
   </li>
             <li><Link onClick={togglenav} to="/Contactus">CONTACT US</Link></li>
             <li><Link onClick={togglenav} to="/Donate"><button className="login-button">DONATE</button></Link></li>

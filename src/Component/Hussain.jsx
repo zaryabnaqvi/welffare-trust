@@ -4,38 +4,53 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect,useState } from 'react'
 
+import simpleParallax from 'simple-parallax-js';
+
 
 
 
 export default function Hussain() {
 
+    useEffect(() => {
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-
-useEffect(() => {
-  const handleScroll = () => {
-    setScrollPosition(window.scrollY);
-  };
-
-  // Add the scroll event listener when the component mounts
-  window.addEventListener('scroll', handleScroll);
-
-  // Remove the scroll event listener when the component unmounts
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+        
+        AOS.init(); // Initialize AOS with the desired duration
+      }, );
 
 
+        useEffect(() => {
+          const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const screenWidth = window.innerWidth
+            if (screenWidth >= 768) {
+            const parallaxContainer = document.querySelector('.l-section-img');
+            parallaxContainer.style.backgroundPositionY = `${scrollPosition }px`;
 
 
+            const parallaxContainer1 = document.querySelector('.l-section-img2');
+            parallaxContainer1.style.backgroundPositionY = `${scrollPosition-2000}px`;
 
 
-const startingBackgroundPositionY = 0; // The starting background position Y (in pixels)
-const endingBackgroundPositionY = 200; // The ending background position Y (in pixels)
+            const parallaxContainer2 = document.querySelector('.l-section-img20');
+            parallaxContainer2.style.backgroundPositionY = `${scrollPosition-4000}px`;
 
 
-const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
+            }
+
+
+          };
+
+
+          
+      
+          // Add the scroll event listener when the component mounts
+          window.addEventListener('scroll', handleScroll);
+      
+          // Remove the scroll event listener when the component unmounts
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
 
 
 
@@ -43,7 +58,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
         <>
 
             <section className='l-section wpb_row height_medium full_height valign_center container-fluid'>
-                <div className="l-section-img" data-img-width="1920" data-img-height="1080" style={{ backgroundPositionY: `${scrollPosition}px` ,backgroundPositionX:'50'}}></div>
+                <div className="l-section-img thumnail" data-img-width="1920" data-img-height="1080" ></div>
                 <div className="l-section-overlay" style={{ background: 'linear-gradient(0deg,#130f2a,rgba(19,15,42,0.00))' }}></div>
 
                 <div style={{
@@ -51,13 +66,13 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-sm-12 col-md-8 col-lg-8'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-12 col-md-8 col-lg-8'>
                                 <div style={{ paddingRight: '7rem' }} className="text-left">
                                     <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div>
                                     <div className="hussainlandh2">A revolutionary leader from the seventh century named Hussain took the strongest stance in favour of moral fairness. Millions are motivated to work towards a just society by his legacy.</div>
@@ -76,7 +91,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
 
 
             <section className='l-section wpb_row height_medium full_height valign_center container-fluid'>
-                <div className="l-section-img5" data-img-width="1920" data-img-height="1080" style={{ backgroundPositionY: `${newBackgroundPositionY}px` }}></div>
+                <div className="l-section-img5" data-img-width="1920" data-img-height="1080" style={{/*{ backgroundPositionY: `${newBackgroundPositionY}px` }*/}}></div>
                 <div className="l-section-overlay" style={{ background: 'linear-gradient(0deg,#130f2a,rgba(19,15,42,0.00))' }}></div>
 
                 <div style={{
@@ -84,7 +99,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
@@ -92,8 +107,8 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
     
                 
                                 
-                                    <div className='hussainland' style={{ color: 'white' }}>“Hussain is of myself and I am of Hussain. O' Allah be pleased with those who please Hussain and hate those who hate Hussain."</div>
-                                    <div className='badge'>HOLY PROPHET PBUH</div>
+                                    <div data-aos="fade-right" data-aos-duration="700" className='hussainland' style={{ color: 'white' }}>“<span style={{color:'#d32f30'}}>Hussain</span> is of myself and I am of <span style={{color:'#d32f30'}}>Hussain</span>. O' <span style={{color:'#d32f30'}}>Allah</span> be pleased with those who please <span style={{color:'#d32f30'}}>Hussain</span> and hate those who hate <span style={{color:'#d32f30'}}>Hussain</span>."</div>
+                                    <div data-aos="fade-left" data-aos-duration="700" className='badge'>HOLY PROPHET PBUH</div>
                        
                         </div>
                     </div>
@@ -115,21 +130,21 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
                     <div className='container'>
                     <div className='badge1 text-left'>EARLY LIFE</div>
                         <div className='row'>
-                            <div className='col-sm-6 col-md-12 col-lg-6'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{} } className="text-left">
                                     
                                     <div className='hussainland' style={{ color: 'white' ,fontSize:'8rem'}}>HUSSAIN WAS KNOWN FOR HIS <span style={{color:'#d32f30'}}>INTEGRITY</span> AND HONOUR.</div>
                                     
                                 </div>
                                 </div>
-                                <div className='col-sm-6 col-md-12 col-lg-6'>
+                                <div data-aos="fade-left" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{ }} className="text-left">
                                     {/* <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div> */}
                                     <div className="hussainlandh2">Hussain was born in Medina in 626 AD, and was reared there by a family that was well-known for their integrity, kindness, and sense of fairness.</div>
@@ -152,7 +167,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
 
 
             <section className='container-fluid l-section wpb_row height_medium full_height valign_center'>
-                <div className="l-section-img2" data-img-width="1920" data-img-height="1080" style={{ backgroundPositionY: `${newBackgroundPositionY}px`}}></div>
+                <div className="l-section-img2" data-img-width="1920" data-img-height="1080" style={{ /*backgroundPositionY: `${newBackgroundPositionY}px`*/}}></div>
                 <div className="l-section-overlay" style={{ background: 'linear-gradient(0deg,#130f2a,rgba(19,15,42,0.00))' }}></div>
 
                 <div style={{
@@ -160,21 +175,21 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
                     <div className='container'>
                     <div className='badge1 text-left'>HIS STRUGGLE</div>
                         <div className='row'>
-                            <div className='col-sm-6 col-md-12 col-lg-6'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{} } className="text-left">
                                     
                                     <div className='hussainland' style={{ color: 'white' ,fontSize:'8rem'}}>HUSSAIN REFUSED TO PLEDGE ALLEGIANCE TO A CORRUPT TYRANT. <span style={{color:'#d32f30'}}>INTEGRITY</span> AND HONOUR.</div>
                                     
                                 </div>
                                 </div>
-                                <div className='col-sm-6 col-md-12 col-lg-6'>
+                                <div data-aos="fade-left" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{ }} className="text-left">
                                     {/* <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div> */}
                                     <div  className="hussainlandh2">Shortly after the demise of Prophet Muhammad, a power struggle divided the people which led to the rise of a despotic tyrant.</div>
@@ -207,7 +222,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
@@ -216,8 +231,8 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                         
                     
                                     
-                    <div className='hussainland' style={{ color: '#130f2a',fontSize:"8" }}>“Yazid is a transgressor, a drunkard, killer of innocent people and an open sinner, we will never give our allegiances to the likes of him.”</div>
-                    <div className='badge'>HUSSAIN IBN ALI</div>                
+                    <div data-aos="fade-right" data-aos-duration="700" className='hussainland' style={{ color: '#130f2a',fontSize:"8" }}>“Yazid is a <span style={{color:'#d32f30'}}>transgressor</span>, a <span style={{color:'#d32f30'}}>drunkard</span>, killer of innocent people and an open <span style={{color:'#d32f30'}}>sinner</span>, we will never give our <span style={{color:'#d32f30'}}>allegiances</span> to the likes of him.”</div>
+                    <div data-aos="fade-left" data-aos-duration="700" className='badge'>HUSSAIN IBN ALI</div>                
                         
                         
                               
@@ -236,7 +251,7 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
 
 
             <section className='container-fluid l-section wpb_row height_medium full_height valign_center'>
-                <div className="l-section-img2" data-img-width="1920" data-img-height="1080" style={{ backgroundPositionY: `${newBackgroundPositionY}px`}}></div>
+                <div className="l-section-img20" data-img-width="1920" data-img-height="1080" style={{/* backgroundPositionY: `${newBackgroundPositionY}px`*/}}></div>
                 <div className="l-section-overlay" style={{ background: 'linear-gradient(0deg,#130f2a,rgba(19,15,42,0.00))' }}></div>
 
                 <div style={{
@@ -244,21 +259,21 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid text-center">
+                }} className="container-fluid text-center mb-5">
 
 
 
                     <div className='container'>
                     <div className='badge1 text-left'>THE BATTLE</div>
                         <div className='row'>
-                            <div className='col-sm-6 col-md-12 col-lg-6'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{} } className="text-left">
                                     
-                                    <div className='hussainland' style={{ color: 'white' ,fontSize:'8'}}>HUSSAIN MADE THE ULTIMATE SACRIFICE FOR MORAL JUSTICE.</div>
+                                    <div className='hussainland' style={{ color: 'white' ,fontSize:'8'}}><span style={{color:'#d32f30'}}>HUSSAIN</span> MADE THE ULTIMATE SACRIFICE FOR MORAL <span style={{color:'#d32f30'}}>JUSTICE</span>.</div>
                                     
                                 </div>
                                 </div>
-                                <div className='col-sm-6 col-md-12 col-lg-6'>
+                                <div data-aos="fade-left" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{ }} className="text-left">
                                     {/* <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div> */}
                                     <div  className="hussainlandh2">Hussain resisted the pressure from Yazid and spoke out against his illegitimate rule. Despite threats of violence, Hussain remained steadfast and was prepared to give his own life.</div>
@@ -289,21 +304,21 @@ const newBackgroundPositionY = startingBackgroundPositionY+(scrollPosition/3);
                     position: 'relative',
                     overflow: ' hidden', lineHeight: '4rem',
 
-                }} className="container-fluid">
+                }} className="container-fluid mb-5">
 
 
 
                     <div className='container'>
                     <div className='text-left badge'>HIS LEGACY</div>
                         <div className='row'>
-                            <div className='col-sm-6 col-md-12 col-lg-6'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{} } className="text-left">
                                     
-                                    <div className='hussainland' style={{ color: '#130f2a',fontSize:"8rem" }}>HUSSAIN’S TIMELESS LEGACY INSPIRES MILLIONS UNTIL TODAY.</div>
+                                    <div className='hussainland' style={{ color: '#130f2a',fontSize:"8rem" }}><span style={{color:'#d32f30'}}>HUSSAIN’S</span> TIMELESS LEGACY INSPIRES MILLIONS UNTIL TODAY.</div>
                                     
                                 </div>
                                 </div>
-                                <div className='col-sm-6 col-md-12 col-lg-6'>
+                                <div data-aos="fade-left" data-aos-duration="700" className='col-sm-6 col-md-12 col-lg-6'>
                                 <div style={{ }} className="text-left">
                                     {/* <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div> */}
                                     <div className="hussainlandh2" style={{color: '#130f2a'}}><p>Hussain ultimately triumphed thanks to this tragically brave deed of sacrifice. His passing sparked a revolution and brought about Yazid's tyrannical rule to an end. Hussain remained true to his beliefs all the way to the end, and his legacy continues to motivate many people all around the world.</p></div>
