@@ -1,0 +1,48 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/images/mostafa-meraji-rhgPQFahr30-unsplash\ \(1\).jpg);
+    background-size: cover; 
+   
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-flow: column;
+    text-align: left;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important; 
+}
+
+@font-face {
+    font-family: 'Champion Gothic';
+    src: local('Champion Gothic Feather weight'), local('Champion-Gothic-Feather-weight'),
+        url('ChampionGothic-Featherweight.woff2') format('woff2'),
+        url('ChampionGothic-Featherweight.woff') format('woff'),
+        url('ChampionGothic-Featherweight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.home h1{
+    font-family:'Champion Gothic';
+    font-weight: 300;
+    font-size: 7.5rem;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:white;
+
+}
+.home h1 span{
+    font-family:'Champion Gothic';
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:#d32f30;
+
+}
+
