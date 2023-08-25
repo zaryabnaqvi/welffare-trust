@@ -13,7 +13,7 @@ const ArticleCard = (props) => {
     const [isLoading,SetisLoading]=useState(false);
 
 
-
+  
     const getGallery=async()=>{
         SetisLoading(true)
       const data = await fetch("https://gold-adventurous-perch.cyclic.cloud/api/gallery/getgallery",{

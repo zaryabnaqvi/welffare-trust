@@ -2890,7 +2890,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 .loader {
     align-items: center!important;
     margin: auto;
-    width: 40%;
+    /* width: 40%; */
   
     border: 16px solid #f3f3f3;
     /* Light grey */
