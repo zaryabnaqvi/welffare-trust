@@ -5,7 +5,7 @@ export default function loader() {
   return (
     <>
 
-<div className='container text-center'>
+<div className='d-flex justify-content-center'>
        <div className="loader">
         <img src={Image} />
     </div>

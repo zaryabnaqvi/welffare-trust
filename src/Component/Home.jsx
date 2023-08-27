@@ -107,7 +107,7 @@ export default function Home() {
 
 
  {isLoading && (
-<div className='container p-5 m-5'>
+<div className='container-fluid d-flex justify-content-center p-5 m-5'>
     <div className='h-100 text-center m-5 p-5'>
     <Loader/>
     </div>

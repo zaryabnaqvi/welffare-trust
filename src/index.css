@@ -2889,22 +2889,23 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 
 .loader {
     align-items: center!important;
-    margin: auto;
-    /* width: 40%; */
-  
+    margin: auto; 
+
+    /* align-items: center;
+    position: absolute; */
     border: 16px solid #f3f3f3;
     /* Light grey */
     border-top: 16px solid #d32f30;
     /* Dark Green */
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     animation: spinloader 1s linear infinite;
 }
 
 .loader img {
-    /* height: 220px;
-    width: 220px; */
+    height: 100%;
+    width: 100%;
     animation: spinlogo 1s linear infinite;
 }
 
