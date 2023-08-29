@@ -2,9 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import '../App.css'
 // import {Helmet} from "react-helmet";
-import Image1 from '../assets/images/first.jpg'
-import Image2 from '../assets/images/quote-imam-hussain.png'
-import {Helmet} from "react-helmet/es/Helmet";
+import Image1 from '../assets/images/first.webp'
+import Image2 from '../assets/images/quote-imam-hussain.webp'
+// import {Helmet} from "react-helmet/es/Helmet";
 import Loader from './Loader'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +22,7 @@ export default function Home() {
 
   const getGallery=async()=>{
       SetisLoading(true)
+
     const data = await fetch("https://gold-adventurous-perch.cyclic.cloud/api/gallery/getgallery",{
       method:"GET",
     
@@ -29,6 +30,7 @@ export default function Home() {
     const json=await data.json();
     SetisLoading(false)
     setGallery(json)
+    
   }
     
   const[isloading,Setisloading] = useState(false)
@@ -83,12 +85,12 @@ export default function Home() {
     console.log(formData);
   };
 
-  document.title='Aza-e-Hussain Trust of Halifax'
+  document.title='Home|Aza-e-Hussain Trust'
 
     useEffect(() => {
       window.scrollTo(0, 0);
       getGallery()
-        document.title='Aza-e-Hussain Trust of Halifax';
+        // document.title='Aza-e-Hussain Trust of Halifax';
 
         AOS.init(); // Initialize AOS with the desired duration
       }, []);
@@ -96,19 +98,19 @@ export default function Home() {
     return (
     <>
 
-<Helmet>
-        <title>Aza-e-Hussain Trust of Halifax</title>
+{/* <Helmet>
+        <title>Home|Aza-e-Hussain Trust</title>
         <link rel="icon" href=''/>
         <meta name="description" content="Aza-e-Hussain Trust of Halifax - Spreading the true message of Islam and standing against terrorism."/>
-        <meta name="keywords" content="Islam, Aza-e-Hussain, Shia, Muslims, Terrorism"/>
+        <meta name="keywords" content="Islam, Aza-e-Hussain, Shia, Muslims, Terrorism, Hussain, Karbala, Ashura, Welfare Trust, Canada, Halifax"/>
         <meta property="og:title" content="Aza-e-Hussain Trust of Halifax"/>
         <meta property="og:description" content="Spreading the true message of Islam and standing against terrorism."/>
-      </Helmet>
+      </Helmet> */}
 
 
  {isLoading && (
-<div className='container-fluid d-flex justify-content-center p-5 m-5'>
-    <div className='h-100 text-center m-5 p-5'>
+<div className='container-fluid d-flex justify-content-center mt-5 pt-5'>
+    <div className='h-100 text-center mt-5 pt-5'>
     <Loader/>
     </div>
     </div>

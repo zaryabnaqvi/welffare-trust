@@ -3,6 +3,7 @@ import Modal from './Modal';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect,useState,useRef} from 'react'
+import { Link } from 'react-router-dom';
 
 
 
@@ -130,24 +131,26 @@ export default function Footer(props) {
     <>
 
     <footer>
+
+
           <div style={{bottom:"0"}} data-aos="fade-up"
-            data-aos-duration="1500" className="footer">
+            data-aos-duration="500" className="footer">
       <div className="footer-top">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 footer-links">
-              <h4>About Us</h4>
+              <h1 className='h4'>About Us</h1>
               <ul>
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <a href="#">Home</a>
+                  <i className="ion-ios-arrow-forward"></i> <Link to="/">Home</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <a href="#about">About us</a>
+                  <Link to="/about">About us</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <a href="#service">DONATE</a>
+                  <Link href="/Donate">DONATE</Link>
                 </li>
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li> -->
                 <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li> --> */}
@@ -159,15 +162,15 @@ export default function Footer(props) {
               <ul>
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li> --> */}
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <a href="#team">Team</a>
+                  <i className="ion-ios-arrow-forward"></i> <Link to="/join">Team</Link>
                 </li>
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> --> */}
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <a href="#contact">Contact</a>
+                  <Link href="/Contactus">Contact</Link>
                 </li>
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <a href="#faq">FAQ</a>
+                  <i className="ion-ios-arrow-forward"></i> <Link to="/faqs">FAQ</Link>
                 </li>
               </ul>
             </div>
@@ -191,10 +194,10 @@ export default function Footer(props) {
             <div className="col-lg-4 col-md-6 footer-newsletter">
                <h4>SOCIAL LINKS</h4>
               <p>
-                <a href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-facebook h1"></i></a>
-                <a href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-instagram h1"></i></a>
-                <a href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-youtube h1"></i></a>
-                <a onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-whatsapp h1"></i></a>
+                <a aria-label="Go to our Facebook Page" href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-facebook h1"></i></a>
+                <a aria-label="Go to our Instagram Page" href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-instagram h1"></i></a>
+                <a aria-label="Go to our Youtube Page" href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-youtube h1"></i></a>
+                <span onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-whatsapp h1"></i></span>
                 {/* <a  data-modal-target="popup-modal"
         data-modal-toggle="popup-modal"  onClick={toggleModal} ><i style={{marginLeft:'.5rem'}} className="fa-brands fa-whatsapp h1"></i></a> */}
               </p> 

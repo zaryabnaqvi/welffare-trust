@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @font-face {
     font-family: 'Champion';
+   
     src: url('../champions-font/Champions-Bold.ttf') format('truetype');
+    font-display: swap;
   }
 
 *{
@@ -38,6 +40,7 @@ body{
     position: relative;
     letter-spacing: 0!important;
     letter-spacing: .2rem;
+    font-display: swap;
 }
 
 .heading1{
@@ -252,7 +255,7 @@ body{
 .home{
     height: 100vh;
     width: 100%;
-    background-image: url(./assets/images/home.jpg);
+    background-image: url(./assets/images/home.webp);
     background-size: cover; 
    
     display: flex;
@@ -273,6 +276,7 @@ body{
         url('ChampionGothic-Featherweight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
   
 .home h1{
@@ -314,7 +318,7 @@ body{
     margin-bottom:5rem ;
 }
 
-.home .wave{
+/* .home .wave{
     position: absolute;
     bottom: -.5rem;
     left: 0;
@@ -344,7 +348,7 @@ body{
     100%{
         background-position-x: 100rem;
     }
-}
+} */
 
 
 
@@ -452,7 +456,7 @@ body{
     line-height: 28px;
     text-align: center;
   }
-  .item{
+  /* .item{
     background:#fff;
     text-align: center;
     padding:30px 25px;
@@ -564,7 +568,7 @@ body{
 		border-bottom: 1px lightskyblue solid;
 		padding-bottom: 20px;
 	}
-}
+} */
 
 .section-head-1{
     margin-bottom: 60px;
@@ -657,7 +661,7 @@ body{
     color:#2f2f2f;
   }
 
-.communicate{
+/* .communicate{
     text-align: center;
     align-items: center;
     background-image: url(../images/img3.jpg);
@@ -792,7 +796,7 @@ body{
 
 .clients .owl-dot.active {
     background-color: #4F84C4;
-}    
+}     */
 
 .team{
     min-width: 100vw;
@@ -1567,9 +1571,7 @@ nav{
     color: #ffffff;
     
 }
-.nav-links li a:hover {
-    /* color: #d32f30;; */
-}
+
 .nav-links li {
     position: relative;
 }
@@ -1977,7 +1979,7 @@ nav{
 }
 
 .l-section-img{
-    background-image:url("./assets/images/hussain-bg.jpg") ;
+    background-image:url("./assets/images/hussain-bg.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2081,7 +2083,7 @@ line-height: 4;
 
 
 .l-section-img1{
-    background-image:url("./assets/images/hussain-second.jpg") ;
+    background-image:url("./assets/images/hussain-second.webp") ;
     position:absolute;
     top: 0;
     left: 0;
@@ -2111,7 +2113,7 @@ line-height: 4;
 
 
 .l-section-img2{
-    background-image:url("./assets/images/hussain-3.jpg") ;
+    background-image:url("./assets/images/hussain-3.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2124,7 +2126,7 @@ line-height: 4;
 }
 
 .l-section-img20{
-    background-image:url("./assets/images/hussain-3.jpg") ;
+    background-image:url("./assets/images/hussain-3.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2136,7 +2138,7 @@ line-height: 4;
     transition-property: background-position;
 }
 .l-section-img3{
-    background-image:url("./assets/images/hussain-4.jpg") ;
+    background-image:url("./assets/images/hussain-4.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2179,7 +2181,7 @@ line-height: 4;
 }
 
 .l-section-img11{
-    background-image:url("./assets/images/karbala.jpg") ;
+    background-image:url("./assets/images/karbala.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2247,7 +2249,7 @@ line-height: 4;
 }
 
 .l-section-img12{
-    background-image:url("./assets/images/karbala-5.jpg") ;
+    background-image:url("./assets/images/karbala-5.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2261,7 +2263,7 @@ line-height: 4;
 
 
 .l-section-img13{
-    background-image:url("./assets/images/karbala-6.jpg") ;
+    background-image:url("./assets/images/karbala-6.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2274,7 +2276,7 @@ line-height: 4;
 }
 
 .l-section-img14{
-    background-image:url("./assets/images/ghadeer.jpg") ;
+    background-image:url("./assets/images/ghadeer.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2288,7 +2290,7 @@ line-height: 4;
 
 
 .l-section-img15{
-    background-image:url("./assets/images/zainab.jpg") ;
+    background-image:url("./assets/images/zainab.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2301,7 +2303,7 @@ line-height: 4;
 }
 
 .l-section-img16{
-    background-image:url("./assets/images/arabeen.jpg") ;
+    background-image:url("./assets/images/arabeen.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2314,7 +2316,7 @@ line-height: 4;
 }
 
 .l-section-img17{
-    background-image:url("./assets/images/karbala-day-of-ashura-arbaeen-imam-hussain.jpg") ;
+    background-image:url("./assets/images/karbala-day-of-ashura-arbaeen-imam-hussain.webp") ;
     position: absolute;
     top: 0;
     left: 0;
@@ -2890,7 +2892,8 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 .loader {
     align-items: center!important;
     margin: auto; 
-
+    margin-top: 5rem;
+margin-bottom: 20rem;
     /* align-items: center;
     position: absolute; */
     border: 16px solid #f3f3f3;

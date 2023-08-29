@@ -1,18 +1,18 @@
 import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import martysofkarbala from "../content/karbalashaheed";
+// import martysofkarbala from "../content/karbalashaheed";
 import { useEffect, useState } from 'react'
 import { Image } from 'react-bootstrap';
-import Image1 from '../assets/images/ali ibne hussain.jpg'
-import Image2 from '../assets/images/mhrezaa-zkpfrcQHTNs-unsplash.jpg'
+import Image1 from '../assets/images/ali ibne hussain.webp'
+import Image2 from '../assets/images/mhrezaa-zkpfrcQHTNs-unsplash.webp'
 
 import {Helmet} from "react-helmet/es/Helmet";
 
 
 
 export default function Arabaeen() {
-    document.title='Arabaeen|AZA-E-HUSSAIN'
+    document.title='Arbaeen|AZA-E-HUSSAIN'
 
     useEffect(() => {
 
@@ -86,9 +86,9 @@ export default function Arabaeen() {
 
                     <div className='container'>
                         <div className='row'>
-                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-12 col-md-8 col-lg-8'>
+                            <div data-aos="fade-right" data-aos-duration="700" className='col-sm-12 col-md-8 col-lg-8 pt-5'>
                                 <div style={{ paddingRight: '7rem' }} className="text-left">
-                                    <div className='ashuraland' style={{ color: 'white' }}>Arbaeen: Commemorating a Legacy of Justice</div>
+                                    <h1 className='ashuraland' style={{ color: 'white',fontSize:'7rem' }}>Arbaeen: Commemorating a Legacy of Justice</h1>
                                     <div className="hussainlandh2">Arbaeen, observed forty days after Ashura, commemorates Hussain ibn Ali's sacrifice in the Battle of Karbala. A 7th-century leader, Hussain laid down his life for social justice. This day inspires reflection on his enduring legacy and encourages the pursuit of justice and empathy in our own lives.</div>
                                     <div className="hussainlandpara" ><p>The arabic word ‘Arbaeen’ (pronounced Arr-ba-een) translates to forty (ie fortieth day). The traditional period of mourning in Islamic culture is forty days. As such,  millions of people around the world mark the Day of Arbaeen by remembering the story of Hussain, his family and his companions.</p></div>
 
@@ -123,7 +123,7 @@ export default function Arabaeen() {
                             <div data-aos="fade-left" data-aos-duration="700" className='col-sm-12 col-md-12 col-lg-6 text-center'>
                                 <div style={{}} className="text-center">
                                     {/* <div className='hussainland' style={{ color: 'white' }}>WHO IS HUSSAIN ?</div> */}
-                                    <Image src={Image1} className='abbasimg' />
+                                    <Image src={Image1} className='abidimg' />
                                 </div>
 
                             </div>

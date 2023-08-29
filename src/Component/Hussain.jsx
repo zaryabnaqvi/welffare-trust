@@ -1,5 +1,5 @@
 import React from 'react'
-import Image1 from '../assets/images/first.jpg'
+// import Image1 from '../assets/images/first.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect,useState } from 'react'

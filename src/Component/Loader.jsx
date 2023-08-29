@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../assets/images/logo.png'
+import Image from '../assets/images/lll.webp'
 
 export default function loader() {
   return (
@@ -13,3 +13,4 @@ export default function loader() {
     </>
   )
 }
+ 

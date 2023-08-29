@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../assets/images/logo.png'
+// import Image from '../assets/images/logo.png'
 import { useEffect ,useState} from 'react';
 import MediaitemGallery from './MediaitemGallery';
 import Loader from './Loader'

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @font-face {
     font-family: 'Champion';
     src: url('../champions-font/Champions-Bold.ttf') format('truetype');
+    font-display: swap;
   }
 
 *{
@@ -181,7 +182,7 @@ body{
     border-radius: 50%;
 }
 /* 
-
+   
 .header{
     display: flex;
     align-items: center;
@@ -242,7 +243,7 @@ body{
 .home{
     height: 100vh;
     width: 100%;
-    background-image: url(./assets/images/home.jpg);
+    background-image: url(./assets/images/home.webp);
     background-size: cover; 
    
     display: flex;
@@ -264,6 +265,7 @@ body{
         url('ChampionGothic-Featherweight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
   }
   
 .home h1{
@@ -304,7 +306,7 @@ body{
 .home h2{
     margin-bottom:5rem ;
 }
-
+/* 
 .home .wave{
     position: absolute;
     bottom: -.5rem;
@@ -315,7 +317,7 @@ body{
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
-}
+} */
 
 .home .wave2{
     animation-direction: reverse;
@@ -518,7 +520,7 @@ body{
     margin-bottom: 20px;
     color:#2f2f2f;
   }   
-
+/* 
 .counters {
 	background-image: url(../images/img2.jpg);
     background-size: cover;
@@ -526,7 +528,7 @@ body{
     background-repeat: no-repeat;
 	color: #fff;
 	padding: 40px 20px;
-}
+} */
 
 .counters .container {
 	display: grid;
@@ -648,7 +650,7 @@ body{
     color:#2f2f2f;
   }
 
-.communicate{
+/* .communicate{
     text-align: center;
     align-items: center;
     background-image: url(../images/img3.jpg);
@@ -658,7 +660,7 @@ body{
     color: #fff;
     min-height: 35vh;
     padding: 40px 20px;
-}  
+}   */
 
 .communicate h3{
     margin-top: 3rem;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import './CSS/nav.css'
 import {Link} from "react-router-dom"
-import Logo from '../assets/images/logo2.png'
+import Logo from '../assets/images/logo2.webp'
 // import { Dropdown } from 'react-bootstrap';
 
 // import Button from 'react-bootstrap/Button';
@@ -72,7 +72,7 @@ export default function Navbar() {
 
         
           const navbar = document.getElementById('navbar');
-          if(document.title==='About Us - Aza-e-Hussain Trust of Halifax' || document.title==='Contact Us - Aza-e-Hussain Trust of Halifax' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
+          if(document.title==='About Us|Aza-e-Hussain Trust' || document.title==='Contact Us|Aza-e-Hussain Trust' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
             navbar.classList.remove('transparent');
             navbar.classList.add('visible');
           }else{
@@ -90,7 +90,7 @@ export default function Navbar() {
 
 
          
-          if(document.title==='About Us - Aza-e-Hussain Trust of Halifax' || document.title==='Contact Us - Aza-e-Hussain Trust of Halifax' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
+          if(document.title==='About Us|Aza-e-Hussain Trust' || document.title==='Contact Us|Aza-e-Hussain Trust' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
             navbar.classList.remove('transparent');
             navbar.classList.add('visible');
 

@@ -66,11 +66,11 @@ const ContactUs = () => {
     console.log(formData);
   };
 
-  document.title ='Contact Us - Aza-e-Hussain Trust of Halifax';
+  document.title ='Contact Us|Aza-e-Hussain Trust';
   useEffect(()=>{
     window.scrollTo(0, 0);
 
-    document.title ='Contact Us - Aza-e-Hussain Trust of Halifax';
+    // document.title ='Contact Us|Aza-e-Hussain Trust';
   },[])
 
   return (
@@ -78,8 +78,8 @@ const ContactUs = () => {
 
 
 <Helmet>
-        <title>Contact Us - Aza-e-Hussain Trust of Halifax</title>
-        <link rel="icon" href={"path-to-your-favicon"}/>
+        <title>Contact Us|Aza-e-Hussain Trust</title>
+        {/* <link rel="icon" href={"path-to-your-favicon"}/> */}
         <meta name="description" content="Get in touch with Aza-e-Hussain Trust of Halifax for any inquiries or feedback."/>
         <meta name="keywords" content="Contact Us, Enquiries, Feedback, Phone, Email, Halifax College, Canada"/>
         <meta property="og:title" content="Contact Us - Aza-e-Hussain Trust of Halifax"/>

@@ -4,8 +4,8 @@ import 'aos/dist/aos.css';
 import martysofkarbala from "../content/karbalashaheed";
 import { useEffect, useState } from 'react'
 import { Image } from 'react-bootstrap';
-import Image1 from '../assets/images/abbas.jpg'
-import Image2 from '../assets/images/Ashura-Day-Image.jpg'
+import Image1 from '../assets/images/abbas.webp'
+import Image2 from '../assets/images/Ashura-Day-Image.webp'
 import {Helmet} from "react-helmet/es/Helmet";
 
 
