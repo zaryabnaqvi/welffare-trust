@@ -139,7 +139,7 @@ export default function Footer(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 footer-links">
-              <h1 className='h4'>About Us</h1>
+              <h4>About Us</h4>
               <ul>
                 <li>
                   <i className="ion-ios-arrow-forward"></i> <Link to="/">Home</Link>

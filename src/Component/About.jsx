@@ -198,7 +198,7 @@ export default function About() {
                 <i className="fa-regular fa-heart aboutcard-icon"></i><br />
                 <div className='aboutcard-title' >About Imam Hussain</div>
                 <div className='aboutcard-text'>Read more abut Imam hussain and their timeless legacy inspiring and vanishing justice</div>
-                <i class="fa-solid fa-arrow-right h2 move"></i>
+                <i style={{fontSize:'2rem'}} class="fa-solid fa-arrow-right move"></i>
 
 
             
@@ -215,7 +215,7 @@ export default function About() {
                 <i className="fa-regular fa-newspaper fa-bounce aboutcard-icon"></i><br />
                 <div className='aboutcard-title' >Media</div>
                 <div className='aboutcard-text'>Stay connected get latest nofications of Accouncements,Majlis and Event.</div>
-                <i class="fa-solid fa-arrow-right h2 move"></i>
+                <i style={{fontSize:'2rem'}} class="fa-solid fa-arrow-right move"></i>
 
 
 
@@ -232,7 +232,7 @@ export default function About() {
                 <i className="fa-solid fa-question fa-beat-fade aboutcard-icon"></i><br />
                 <div className='aboutcard-title' >FAQs</div>
                 <div className='aboutcard-text'>Frequently asked questions about the trust, and who we are and what we want.</div>
-                <i class="fa-solid fa-arrow-right h2 move"></i>
+                <i style={{fontSize:'2rem'}} class="fa-solid fa-arrow-right move"></i>
 
 
 

@@ -12,14 +12,14 @@ export default function MediaitemGallery(props) {
   return (
     <>
     
-       <div className="col-lg-4 col-sm-6 col-12"  > 
+       <div className="col-lg-6 col-sm-6"  > 
           <div className={`card article_card bbb p-3 mb-5 shadow` }
          >
             <a>
               <div className='cardTitle'>{Video.title}</div>
-                          <div className="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src={`https://www.youtube.com/embed/${Video.Url}`} allowFullScreen></iframe>
-</div>
+                          
+  <iframe class="embed-responsive-item" style={{width:"100%" , aspectRatio:"16 / 9"}} src={`https://www.youtube.com/embed/${Video.Url}`} allowFullScreen></iframe>
+
 
               <div className="article_date">
                 <span className="article_day">{date}</span>

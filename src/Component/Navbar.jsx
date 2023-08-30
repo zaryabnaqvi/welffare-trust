@@ -175,13 +175,13 @@ export default function Navbar() {
     
     
     
-
+      
   return (
     <>
         
         <nav id="navbar" style={{display:'flex',top:0}}>
         <div className="logo">
-           <Link to="/"> <img style={{borderRadius: '50%',borderStyle: 'double',}} src={Logo} alt="Logo Image"/></Link>
+           <Link to="/"> <img style={{borderRadius: '50%',borderStyle: 'double',}} src={Logo} alt="Logo Image" loading="lazy"/></Link>
         </div>
 
         <div id="ham" className='hamburger'   onClick={togglenav}>

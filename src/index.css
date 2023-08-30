@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
 @font-face {
     font-family: 'Champion';
    
     src: url('../champions-font/Champions-Bold.ttf') format('truetype');
     font-display: swap;
   }
+  /* @tailwind base;
+  @tailwind components;
+  @tailwind utilities;  */
 
 *{
     /* font-family: 'Champion', sans-serif;  */
@@ -20,6 +25,9 @@
 
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 html{
@@ -29,6 +37,11 @@ html{
 body{
     overflow-x: hidden;
 }
+
+img {
+    width: 100%; /* or max-width: 100%; */
+    height: auto;
+  }
 
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
@@ -2939,3 +2952,4 @@ margin-bottom: 20rem;
     /* font-size: 14rem!important; */
 
 }
+

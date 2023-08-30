@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import { useEffect } from 'react';
 import MediaitemVideos from './MediaitemVideos';
 import Loader from './Loader'
-import { Route , Routes} from 'react-router-dom';
-import Videoss from './Videos'
+// import { Route , Routes} from 'react-router-dom';
+// import Videoss from './Videos'
 
 const ArticleCard = (props) => {
 
@@ -11,7 +11,7 @@ const ArticleCard = (props) => {
 
     const [Videos,setVideos]=useState([]);
 
-
+ 
  
     const getVideos=async()=>{
         SetisLoading(true)

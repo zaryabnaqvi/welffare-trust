@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect,useState} from 'react'
 import MediaItem from './MediaItem';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Home() {
 
@@ -21,14 +22,14 @@ export default function Home() {
 
 
   const getGallery=async()=>{
-      SetisLoading(true)
+      
 
     const data = await fetch("https://gold-adventurous-perch.cyclic.cloud/api/gallery/getgallery",{
       method:"GET",
     
     })
     const json=await data.json();
-    SetisLoading(false)
+
     setGallery(json)
     
   }
@@ -89,6 +90,8 @@ export default function Home() {
 
     useEffect(() => {
       window.scrollTo(0, 0);
+      // setTimeout(()=>SetisLoading(true),1000)
+     
       getGallery()
         // document.title='Aza-e-Hussain Trust of Halifax';
 
@@ -118,13 +121,13 @@ export default function Home() {
 
 }
 
-{!isLoading &&(<section>
+{(<section>
     
 
             <section
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500"
+                // data-aos="fade-down"
+                // data-aos-easing="linear"
+                // data-aos-duration="1500"
                 id="home"
                 className="home"
             >
@@ -151,7 +154,7 @@ export default function Home() {
                 <div className="row">
                     <div data-aos="fade-right" data-aos-duration="700" className="col-lg-6 col-sm-12 col-md-12">
                         <div>
-                            <img className="vision img-fluid" src={Image1} alt="Logo Image" />
+                            <LazyLoadImage className="vision img-fluid" height={"auto"} width={"100%"} src={Image1} alt="Qoute aza -e- hussain " />
                         </div>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="700" className="col-sm-12 col-md-12 col-lg-6 mb-5 mt-sm-2">
@@ -191,7 +194,7 @@ export default function Home() {
 
                          <div data-aos="fade-left" data-aos-duration="700" className="hidden md:block col-sm-12 col-md-12 col-lg-6 mb-5 mt-5">
                             <div>
-                                <img className="img-fluid" src={Image2} alt="Logo Image" />
+                                <LazyLoadImage className="img-fluid" src={Image2} alt="Quote" />
                                 <div style={{wordSpacing: '3px' ,color: 'rgb(255, 255, 255)'}}><b>LABAIK YA HUSSAIN</b></div>
                             </div>
                         </div> 

@@ -12,7 +12,7 @@ import About from './Component/About'
 import Media from './Component/Media'
 
 
-import React from 'react';
+import React from 'react'; 
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import Hussain from './Component/Hussain'
@@ -26,6 +26,8 @@ import FAQS from './Component/Faq'
 
 function App() {
   
+
+
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
@@ -52,6 +54,7 @@ function App() {
   return (
     
     <>
+
      <BrowserRouter>
       <Navbar/>
     <Routes>
