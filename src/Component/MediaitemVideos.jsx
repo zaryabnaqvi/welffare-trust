@@ -41,7 +41,7 @@ export default function MediaitemGallery(props) {
               {/* <div className='cardTitle'>{Video.title}</div> */}
                           
   <iframe class="embed-responsive-item" style={{width:"100%" , aspectRatio:"16 / 9"}} src={`https://www.youtube.com/embed/${Video.Url}`} allowFullScreen></iframe>
-  <h2  style={{fontSize:"2rem"}} className="article-title"><b>{Video.title}</b></h2>
+  <h2  style={{fontSize:"2.4rem"}} className="article-title"><b>{Video.title}</b></h2>
     <h3 style={{fontSize:"2rem"}} className="article-title">{(texthidden) ?getFirst12Words(Video.desc):Video.desc}<a style={{color:"#d32f30",cursor:"pointer",fontSize:"2rem"}} onClick={handleHidden}>{(texthidden) ? " ..." : " <<"}</a></h3>
     <p className='article-title'>{date} - {monthAbbreviation} - {year} </p>
 

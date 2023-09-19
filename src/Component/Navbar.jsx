@@ -257,16 +257,16 @@ export default function Navbar() {
  
   </li>
             <li className='float-end'><Link onClick={togglenav} to="/Contactus">CONTACT US</Link></li>
-            <li className='float-end'><Link onClick={togglenav} to="/Donate"><button className="login-button">DONATE</button></Link></li>
+            <li className='float-end'><Link onClick={togglenav} to="https://donate.stripe.com/bIYeUUfdl6Xv5SU5kk"><button onClick={()=>{window.location("https://donate.stripe.com/bIYeUUfdl6Xv5SU5kk")}} className="login-button">DONATE</button></Link></li>
       <li><Link to="/join"><button className="join-button" onClick={togglenav} >JOIN OUR TEAM</button></Link></li>
         
         
         </ul>
         
         <div style={{marginLeft:'62vw',marginTop:'1.5rem',position:'absolute'}}>
-    <button style={{display:`${block}`}} className="block md:hidden rounded login-button1 px-4 py-3">
+   <a style={{textDecoration:"none"}} href="https://donate.stripe.com/bIYeUUfdl6Xv5SU5kk"> <button style={{display:`${block}`}} className="block md:hidden rounded login-button1 px-4 py-3">
       DONATE
-    </button>
+    </button></a>
 </div>
         </nav>
       
