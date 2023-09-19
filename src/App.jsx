@@ -19,8 +19,9 @@ import Hussain from './Component/Hussain'
 import Ashura from './Component/Ashura'
 import Arabaeen from './Component/Arabaeen'
 import HussainFAQs from './Component/HussainFAQs'
-// import Videoss from './Component/Videos'
+import Videoss from './Component/Videos'
 import FAQS from './Component/Faq'
+import { useEffect } from 'react'
 
 
 
@@ -51,6 +52,10 @@ function App() {
   
   }
 
+  useEffect(()=>{
+  getVideos()  
+  },[])
+
   return (
     
     <>
@@ -59,7 +64,15 @@ function App() {
       <Navbar/>
     <Routes>
 
-  
+    {Videos.map((item) => (
+                    <Route
+                        key={item._id}
+                        path={`/${item.Url}`}
+                        element={<Videoss Video={item} />}
+                    />
+                ))}
+
+                
 
 
        <Route exact path="/"  element={<Home/>} />

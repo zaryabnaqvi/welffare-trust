@@ -56,7 +56,7 @@ const ArticleCard = (props) => {
        <div className="container">
     {/* <h1 style={{ color: '#130f2a', fontSize: "8rem",fontFamily:'Champion Gothic' }} >MAJLIS</h1> */}
 
-      <div className="row mt-5">
+      <div className="news-container">
 
       {isLoading && (
         <>
