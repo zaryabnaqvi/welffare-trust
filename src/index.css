@@ -1104,10 +1104,10 @@ img {
             position: relative;
             padding-bottom: 12px;
             margin-bottom: 20px;
-            letter-spacing: 1px;
+            letter-spacing: 5px;
         }
         
-        .footer .footer-top h4::before {
+        /* .footer .footer-top h4::before {
             content: '';
             position: absolute;
             left: 0;
@@ -1115,7 +1115,7 @@ img {
             height: 0;
             width: 50px;
             border-bottom: 2px solid #ffffff;
-        }
+        } */
         
         .footer .footer-top .footer-links ul {
             list-style: none;
@@ -1129,10 +1129,10 @@ img {
             font-size: 16px;
         }
         
-        .footer .footer-top .footer-links ul li {
+        /* .footer .footer-top .footer-links ul li {
             border-bottom: 1px solid #ffffff;
             padding: 7px 0;
-        }
+        } */
         
         .footer .footer-top .footer-links ul li:first-child {
             padding-top: 0;
@@ -1647,6 +1647,10 @@ nav{
 
 /*Stying for small screens*/
 @media screen and (max-width: 800px){
+
+    .hide{
+        display: none;
+    }
 
     .qoute{
         font-size: 6rem;
@@ -2967,24 +2971,47 @@ margin-bottom: 20rem;
     color: black;
     display: flex;
     flex-direction: column;
-    width: 28vw; /* Increase this value if you want more articles per row, decrease if you want less*/
+    width: 22vw; /* Increase this value if you want more articles per row, decrease if you want less*/
     min-width: 150px;
     max-width: 700px;
-    box-shadow: 2px 2px 25px 2px rgba(0,0,0,0.9);
-    margin: 20px;
+    box-shadow: 2px 2px 25px 2px rgba(196, 196, 196, 0.9);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
     transition: 0.3s;
     font-size: 14px;
-    font-family: 'Lora', serif;
+    font-family: 'Open sans';
   }
 
-  @media only screen and (max-width: 850px) {
+
+  @media only screen and (min-width: 769px) and (max-width:992px) {
     .article-container {
-      width: 90vw;
+        width: 28vw;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .article-container {
+      width: 38vw;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .article-container {
+      width: 100vw;
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
 
   .article-container:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
     box-shadow: 2px 2px 25px 2px rgba(139, 139, 139, 0.89);
 
   }
@@ -2993,11 +3020,40 @@ margin-bottom: 20rem;
     width: 100%;
     /* height: 250px; */
     object-fit: cover;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     
   }
 
   .article-title {
+    font-family: "Open Sans";
     padding: 10px;
   }
 
+  .news-image{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 20%;
+    background-color: white;
+  }
+  .news-image a{
+    width: 15%;
+    /* aspect-ratio: 3/2; */
+    /* mix-blend-mode: color-burn; */
+    /* object-fit: contain; */
+    /* filter: grayscale(100%); */
+    /* opacity: 0.5; */
+  }
+.news-image a img{
+ width: 100%;
+ aspect-ratio: 3/2;
+ /* mix-blend-mode: color-burn; */
+ object-fit: contain;
+ filter: grayscale(100%);
+ opacity: 0.5;
+
+}
+.news-image a img:hover{
+    transition: 0.3s ease;
+    opacity: 2;
+}

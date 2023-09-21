@@ -86,7 +86,7 @@ export default function Home() {
     console.log(formData);
   };
 
-  document.title='Home|Aza-e-Hussain Trust'
+  document.title='Home | Aza-e-Hussain Trust'
 
     useEffect(() => {
       window.scrollTo(0, 0);
@@ -95,8 +95,12 @@ export default function Home() {
       getGallery()
         // document.title='Aza-e-Hussain Trust of Halifax';
 
-        AOS.init(); // Initialize AOS with the desired duration
+         // Initialize AOS with the desired duration
       }, []);
+
+      useEffect(()=>{
+        AOS.init()
+    },)
 
     return (
     <>
@@ -180,7 +184,7 @@ export default function Home() {
                     JOIN <span style={{color: 'rgb(0, 0, 0)'}}>OUR</span> TEAM
                 </h1>
                 <div className="container">
-                    <div data-aos="fade-up" data-aos-duration="1500" className="row">
+                    <div  className="row">
 
                         <div data-aos="fade-right" data-aos-duration="700" className="col-sm-12 col-md-12 col-lg-6 pb-5">
                             <div className="text-left">
@@ -204,8 +208,7 @@ export default function Home() {
 
            
 
-            <section data-aos="fade-up"
-                data-aos-duration="1500" id="contact" className="container-fluid">
+            <section  id="contact" className="container-fluid">
                 {/* <!-- <h1 className="heading text-center">CONNECT WITH US</h1>
      --> */}
                 <div data-aos="fade-up"

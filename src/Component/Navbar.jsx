@@ -72,7 +72,8 @@ export default function Navbar() {
 
         
           const navbar = document.getElementById('navbar');
-          if(document.title==='About Us|Aza-e-Hussain Trust' || document.title==='Contact Us|Aza-e-Hussain Trust' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
+  
+          if(document.title==='About Us | Aza-e-Hussain Trust' || document.title==='Contact Us | Aza-e-Hussain Trust' || document.title === 'MEDIA | AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain" || document.title==="Team | Aza-e-Hussain" || document.title==="Know more about Aza-e-hussain Trust"  ){
             navbar.classList.remove('transparent');
             navbar.classList.add('visible');
           }else{
@@ -90,7 +91,7 @@ export default function Navbar() {
 
 
          
-          if(document.title==='About Us|Aza-e-Hussain Trust' || document.title==='Contact Us|Aza-e-Hussain Trust' || document.title === 'MEDIA|AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"){
+          if(document.title==='About Us | Aza-e-Hussain Trust' || document.title==='Contact Us | Aza-e-Hussain Trust' || document.title === 'MEDIA | AZA-E-HUSSAIN' || document.title==="Know more about Imam Hussain"|| document.title==="Team | Aza-e-Hussain" || document.title==="Know more about Aza-e-hussain Trust"){
             navbar.classList.remove('transparent');
             navbar.classList.add('visible');
 

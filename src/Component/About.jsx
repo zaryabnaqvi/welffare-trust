@@ -11,14 +11,14 @@ import {Helmet} from "react-helmet/es/Helmet";
 // import { useEffect, useState } from 'react'
 // import { Image } from 'react-bootstrap';
 // import Image1 from '../assets/images/abbas.jpg'
-import Image2 from '../assets/images/lll.webp'
+import Image2 from '../assets/images/Untitled design (1).png'
 
 
 
 
 
 export default function About() {
-  document.title = 'About Us|Aza-e-Hussain Trust'
+  document.title = 'About Us | Aza-e-Hussain Trust'
 
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function About() {
 
 
 <Helmet>
-        <title>About Us|Aza-e-Hussain Trust</title>
+        <title>About Us | Aza-e-Hussain Trust</title>
         <link rel="icon" href={"path-to-your-favicon"}/>
         <meta name="description" content="Learn about Aza-e-Hussain Trust of Halifax and its mission to spread the true message of Islam."/>
         <meta name="keywords" content="Aza-e-Hussain, Trust, Halifax, Islam, Shia, True Message"/>
@@ -55,7 +55,7 @@ export default function About() {
 
 
 
-          <div className='container'>
+          <div className='container pt-5'>
 
 
             <div className='hussainland' style={{ color: '#130f2a', fontSize: "8rem" }}>WHO WE ARE ?</div>

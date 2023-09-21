@@ -30,18 +30,20 @@ const data = {
 const styles = {
     // bgColor: 'white',
     fontFamily:'Champion Gothic',
-    titleTextColor: "black",
-    rowTitleColor: "black",
-     titleTextSize: '8rem',
-    // rowContentColor: 'grey',
-    // arrowColor: "red",
+    titleTextColor: "#000000",
+    rowTitleColor: "#666666",
+     titleTextSize: '5rem',
+     rowTitleTextSize:"1.6rem",
+    rowContentColor: '#787878',
+    rowContentTextSize:"1.4rem",
+    arrowColor: "#d32f30",
 };
 
 const config = {
     animate: true,
-    arrowIcon: "?",
+    // arrowIcon: "?",
     tabFocus: true,
-    // expandIcon: "+",
+    expandIcon: "+",
     collapseIcon: "-",
 };
 

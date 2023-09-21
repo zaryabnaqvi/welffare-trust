@@ -72,7 +72,7 @@ function App() {
                     />
                 ))}
 
-                
+
 
 
        <Route exact path="/"  element={<Home/>} />
@@ -129,7 +129,7 @@ function App() {
                  <p> For Female</p>
                 </div>
 
-                <button href='' className='joinwhatsapp px-5'>JOIN</button>
+                <a href="https://chat.whatsapp.com/E6s45oOS8ON4NNNO7Q6Dhd" target='_blank'><button  className='joinwhatsapp px-5'>JOIN</button></a>
 
                 </div>
               </div>

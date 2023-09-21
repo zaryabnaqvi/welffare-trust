@@ -66,7 +66,7 @@ const ContactUs = () => {
     console.log(formData);
   };
 
-  document.title ='Contact Us|Aza-e-Hussain Trust';
+  document.title ='Contact Us | Aza-e-Hussain Trust';
   useEffect(()=>{
     window.scrollTo(0, 0);
 
@@ -78,7 +78,7 @@ const ContactUs = () => {
 
 
 <Helmet>
-        <title>Contact Us|Aza-e-Hussain Trust</title>
+        <title>Contact Us | Aza-e-Hussain Trust</title>
         {/* <link rel="icon" href={"path-to-your-favicon"}/> */}
         <meta name="description" content="Get in touch with Aza-e-Hussain Trust of Halifax for any inquiries or feedback."/>
         <meta name="keywords" content="Contact Us, Enquiries, Feedback, Phone, Email, Halifax College, Canada"/>
@@ -101,7 +101,7 @@ const ContactUs = () => {
             <div className="col2 column1 first">
               {/* Google Maps */}
            <p className='hussainlandh2' style={{ color: '#130f2a', fontSize: "3rem" }}>  We would love to hear any enquiries or feedback you may have!</p> 
-           <p className="hussainlandpara" style={{fontSize:'1.7rem', lineHeight:'1.5' }}> Before completing the form, please check out the <Link style={{color:"#d32f30"}}>FAQs section</Link>. We endeavour to reply to your enquiry at our earliest.Please make sure you have explored the website fully that may answer your query.</p> 
+           <p className="hussainlandpara" style={{fontSize:'1.7rem', lineHeight:'1.5' }}> Before completing the form, please check out the <Link to="/faqs" style={{color:"#d32f30"}}>FAQs section</Link>. We endeavour to reply to your enquiry at our earliest.Please make sure you have explored the website fully that may answer your query.</p> 
               {/* You can add the Google Maps script and initialization here */}
             </div>
             <div className="col2 column2 last">

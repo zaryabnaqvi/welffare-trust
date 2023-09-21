@@ -4,6 +4,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect,useState,useRef} from 'react'
 import { Link } from 'react-router-dom';
+import  Image1  from '../assets/images/Untitled design.png';
+import  Image2  from '../assets/images/democratic.jpg';
+
 
 
 
@@ -125,79 +128,117 @@ export default function Footer(props) {
 
     useEffect(() => {
         AOS.init(); // Initialize AOS with the desired duration
-      }, []);
+      },);
 
   return (
     <>
 
     <footer>
 
-
-          <div style={{bottom:"0"}} data-aos="fade-up"
-            data-aos-duration="500" className="footer">
-      <div className="footer-top">
+    <div className='news-image mb-5'>
+          <a href="">  <img src="https://yt3.googleusercontent.com/DuUiy9A6_vGmKyiu5vsvCGsoH7U1izf6OlFk6s6ClOojPRKnSIR1AP-Fr93DXfbSi0TN55I-FRE=s900-c-k-c0x00ffffff-no-rj" alt="" />
+          </a><a href="https://www.ctvnews.ca/mobile/video?clipId=2759536"> <img src="https://scontent.fkhi22-1.fna.fbcdn.net/v/t39.30808-6/279843202_366928738806459_1429039105706321188_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeFjotvIpvVxsQP_PAH4s1Q0dSdmy9FF_Od1J2bL0UX858iIp0Rltw-GAXqQlZMjsC39DNJU0KCv7B2vexeFxYDX&_nc_ohc=Ojzbj4oDs6oAX88D7QW&_nc_ht=scontent.fkhi22-1.fna&oh=00_AfAc9fossNAqjV2KYtLjnBGTNI2J4BxoaHF3uEK_4IWnGg&oe=6510CD98" alt="" />
+          </a><a href=""> <img src="https://scontent.fkhi22-1.fna.fbcdn.net/v/t1.6435-9/30221991_1955824054459656_1592165881528451072_n.png?stp=dst-png&_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHU7Ryht1Rvg6D1o1hyVCFkp40mwcAdNzinjSbBwB03OOzmQx0ISyGagUFtMAolSd0wEPcmRNHJUkEB2M7jsZcP&_nc_ohc=m4fmqII2opkAX9pkuWU&_nc_ht=scontent.fkhi22-1.fna&oh=00_AfBxcLQswUZDKFeF3iTnUDT6UEET3v0G_cE6JGtVf_3aaw&oe=6532563F" alt="" />
+          </a><a href="https://www.sadaehussaini.in/clip/588"> <img src={Image1} alt="democratic" />
+          </a><a href=""> <img height="100" width="150" src={Image2} alt="sada" />
+          </a> </div>
+          <div style={{bottom:"0",backgroundColor:"linear-gradient(180deg,#c12a32 0%,#d32f30 10%);"}}  className="footer">
+      <div data-aos="fade"
+            data-aos-duration="500" className="footer-top">
+    
         <div className="container">
+         
           <div className="row">
-            <div className="col-lg-4 col-md-6 footer-links">
-              <h4>About Us</h4>
+          
+            <div className="col-lg-3 col-md-6 footer-links">
+            <h4>EXPLORE</h4>
               <ul>
+               
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <Link to="/">Home</Link>
+                  <i className="ion-ios-arrow-forward"></i>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/about">About us</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <Link to="/about">About us</Link>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/media/majlis">In the Media</Link>
                 </li>
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <Link href="/Donate">DONATE</Link>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/faqs">FAQS</Link>
                 </li>
+                <li>
+                  <i className="ion-ios-arrow-forward"></i>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/ContactUs">Contact us</Link>
+                </li>
+               
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li> -->
                 <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li> --> */}
               </ul>
             </div>
 
-            <div className="col-lg-4 col-md-6 footer-links">
-              <h4>Useful Links</h4>
+            <div
+              className="col-lg-3 col-md-6 footer-links"
+              style={{fontSize: '1.5rem'}}
+            >
+              <h4 className='hide' style={{color:"#d32f30" ,textDecoration:"none" }}>EXPLORE</h4>
+
+             
               <ul>
+              <li>
+                  <i className="ion-ios-arrow-forward"></i>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} href="/media/Accouncement">Upcoming Events</Link>
+                </li>
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li> --> */}
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <Link to="/join">Team</Link>
+                  <i className="ion-ios-arrow-forward"></i> <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/join">Join Our Team</Link>
                 </li>
                 {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> --> */}
                 <li>
                   <i className="ion-ios-arrow-forward"></i>
-                  <Link href="/Contactus">Contact</Link>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} href="/Contactus">Contact</Link>
+                </li>
+               
+
+                <li>
+                  <i className="ion-ios-arrow-forward"></i>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} href="https://donate.stripe.com/bIYeUUfdl6Xv5SU5kk">Make a Donation</Link>
+                </li>
+              </ul>
+        
+            </div>
+
+            <div className="col-lg-3 col-md-6 footer-links">
+            <h4 className='hide' style={{color:"#d32f30" ,textDecoration:"none" }}>EXPLORE</h4>
+
+             
+              <ul>
+                {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="#portfolio">Portfolio</a></li> --> */}
+                <li>
+                  <i className="ion-ios-arrow-forward"></i> <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/hussain">Hussain</Link>
+                </li>
+                {/* <!-- <li><i className="ion-ios-arrow-forward"></i> <a href="careers.html">Career</a></li> --> */}
+                <li>
+                  <i className="ion-ios-arrow-forward"></i>
+                  <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} href="/hussain/ashura-day">The day of Ashura</Link>
                 </li>
                 <li>
-                  <i className="ion-ios-arrow-forward"></i> <Link to="/faqs">FAQ</Link>
+                  <i className="ion-ios-arrow-forward"></i> <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/hussain/Arabaeen">The day of Arbaeen</Link>
+                </li>
+                <li>
+                  <i className="ion-ios-arrow-forward"></i> <Link style={{color:"rgba(255,255,255,.82)",textDecoration:"none"}} to="/hussain/hussain-faqs">FAQs About Imam Hussain</Link>
                 </li>
               </ul>
             </div>
 
-            {/* <div
-              className="col-lg-3 col-md-6 footer-contact"
-              style={{fontSize: '1.5rem'}}
-            >
-              <h4>Contact Us</h4>
-              <p>
-                STREET NO 05<br />
-                Block-13/E3<br />
-                TORONTO, Canada <br />
-                <strong>Phone:</strong> +923362235541<br />
-                <strong>Email:</strong> azaehussain@gmail.com<br />
-              </p>
+ 
 
-        
-            </div> */}
-
-            <div className="col-lg-4 col-md-6 footer-newsletter">
-               <h4>SOCIAL LINKS</h4>
+            <div className="col-lg-3 col-md-6 footer-newsletter">
+               <h4>Connect with us</h4>
               <p>
-                <a aria-label="Go to our Facebook Page" href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-facebook h1"></i></a>
-                <a aria-label="Go to our Instagram Page" href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-instagram h1"></i></a>
-                <a aria-label="Go to our Youtube Page" href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-youtube h1"></i></a>
-                <span onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'3rem',color:'white'}} className="fa-brands fa-whatsapp h1"></i></span>
+                <a aria-label="Go to our Facebook Page" href='https://www.facebook.com/Azaehussainhalifax?mibextid=ZbWKwL'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'4rem',color:'white'}} className="px-2 fa-brands fa-facebook h1"></i></a>
+                <a aria-label="Go to our Instagram Page" href='https://instagram.com/azaehussainhalifax?igshid=ZDc4ODBmNjlmNQ=='  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'4rem',color:'white'}} className="px-2 fa-brands fa-instagram h1"></i></a>
+                <a aria-label="Go to our Youtube Page" href='https://www.youtube.com/@AAHHalifax'  target="_blank"><i style={{marginLeft:'.5rem',fontSize:'4rem',color:'white'}} className="fa-brands fa-youtube h1 px-2"></i></a>
+                <span onClick={props.onOpenModal}><i style={{marginLeft:'.5rem',fontSize:'4rem',color:'white'}} className="fa-brands fa-whatsapp h1"></i></span>
                 {/* <a  data-modal-target="popup-modal"
         data-modal-toggle="popup-modal"  onClick={toggleModal} ><i style={{marginLeft:'.5rem'}} className="fa-brands fa-whatsapp h1"></i></a> */}
               </p> 
@@ -243,11 +284,9 @@ export default function Footer(props) {
         <div className="row align-items-center">
           <div
             className="col-md-6 copyright"
-            style={{color: '#fff', fontSize: '1.3rem'}}
+            style={{color: '#fff', fontSize: '1.4rem'}}
           >
             Copyright &copy; 2023 Aza - e - Hussain. All Rights Reserved.
-            <br />
-            Developed by Zaryab Naqvi
           </div>
         </div>
       </div>

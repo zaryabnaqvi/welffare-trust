@@ -54,9 +54,9 @@ export default function MediaitemGallery(props) {
         </div>  */}
          <div className="article-container" >
     <img src={Pic.Url} alt={Pic.title} className="article-image" />
-    <h2  style={{fontSize:"2.4rem"}} className="article-title"><b>{Pic.title}</b></h2>
-    <h3 style={{fontSize:"2rem"}} className="article-title">{(texthidden) ?getFirst12Words(Pic.desc):Pic.desc}<a style={{color:"#d32f30",cursor:"pointer",fontSize:"2rem"}} onClick={handleHidden}>{(texthidden) ? " ..." : " <<"}</a></h3>
-    <p className='article-title'>{date} - {monthAbbreviation} - {year} </p>
+    <h2  style={{fontSize:"1.8rem"}} className="px-3 pt-3"><b>{Pic.title}</b></h2>
+    <h3 style={{fontSize:"1.3rem",color:"#787878"}} className="px-3 pt-1">{(texthidden) ?getFirst12Words(Pic.desc):Pic.desc}<a style={{color:"#d32f30",cursor:"pointer",fontSize:"1.3rem"}} onClick={handleHidden}>{(Pic.desc.split(' ').length>12)?((texthidden) ? " ..." : " <<"):""}</a></h3>
+    <p className='px-3 pt-1' style={{color:"#787878"}}>{date} - {monthAbbreviation} - {year} </p>
 
   </div>
     </>

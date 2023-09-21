@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const TabsComponent = (props) => {
 
-  document.title="MEDIA|AZA-E-HUSSAIN"
+  document.title="MEDIA | AZA-E-HUSSAIN"
 
 
   useEffect(()=>{
@@ -17,8 +17,8 @@ const TabsComponent = (props) => {
     <>
     <div className='container-fluid mt-5 pt-5'>
      <div className='container pt-5 text-center'>
-    <h1 style={{ color: '#130f2a', fontSize: "6rem", fontFamily:"Champion Gothic" }} >{props.choice} - AZA-E-HUSSAIN</h1>
-      
+    <h1 className='mt-5' style={{ color: '#130f2a', fontSize: "6rem", fontFamily:"Champion Gothic" }} >{props.choice} - AZA-E-HUSSAIN</h1>
+      <p style={{color:"#787878",fontSize:"1.5rem"}}>Gallery and Videos of event and Accouncement held by the Aza-e-hussain Trust </p>
     </div>
     <div className="tabs">
       <input type="radio" name="tabs" id="tab1" checked />

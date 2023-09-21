@@ -13,7 +13,7 @@ export default function MediaItem(props) {
           src={props.image}
           srcSet={`${props.image} 300w, ${props.image} 600w, ${props.image} 1200w`} // Adjust the sizes accordingly
           sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px" // Adjust the sizes accordingly
-          className="media-image relative z-0 object-fit-contain w-full h-72 md:h-96"
+          className="media-image relative z-0 object-fit-cover w-full h-72 md:h-96"
           alt={props.title}
          
         />

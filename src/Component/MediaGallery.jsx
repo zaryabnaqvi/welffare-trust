@@ -26,7 +26,7 @@ const ArticleCard = (props) => {
     }
 
   useEffect(()=>{
-    document.title="MEDIA|AZA-E-HUSSAIN"
+    document.title="MEDIA | AZA-E-HUSSAIN"
     getGallery();
   }
   ,[])
@@ -46,7 +46,8 @@ const ArticleCard = (props) => {
 
     </div>) 
     }
-   <div className="container">
+
+   <div className="">
 {/* <h1 style={{ color: '#130f2a', fontSize: "8rem",fontFamily:'Champion Gothic' }} >MAJLIS</h1> */}
 
   <div className="news-container">
